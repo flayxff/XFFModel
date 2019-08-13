@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XFFModel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsi-t9-Moz">
+                                <rect key="frame" x="168.5" y="194" width="77" height="30"/>
+                                <state key="normal" title="字典转模型"/>
+                                <connections>
+                                    <action selector="dictTransitionToModel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2kN-bK-PN6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-ih-aNz">
+                                <rect key="frame" x="168.5" y="274" width="77" height="30"/>
+                                <state key="normal" title="模型转字典"/>
+                                <connections>
+                                    <action selector="modelTransitionToDict:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T95-89-G45"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kkM-ih-aNz" firstAttribute="top" secondItem="dsi-t9-Moz" secondAttribute="bottom" constant="50" id="35b-lS-x0O"/>
+                            <constraint firstItem="kkM-ih-aNz" firstAttribute="centerX" secondItem="dsi-t9-Moz" secondAttribute="centerX" id="IDo-9U-o9X"/>
+                            <constraint firstItem="dsi-t9-Moz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aav-Dg-f8j"/>
+                            <constraint firstItem="dsi-t9-Moz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="hQM-ae-JwJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

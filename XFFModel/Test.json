@@ -1,0 +1,30 @@
+{
+    "name" : "小明",
+    "age" : 8,
+    "isMerry" : false,
+    "tools" : ["炭笔", "尺子", "橡皮擦"],
+    "pet" : {
+        "name" : "二哈",
+        "age" : 2
+    },
+    "books" : [
+        {
+            "title" : "三国演义",
+            "author" : "罗贯中"
+        },
+        {
+            "title" : "红楼梦",
+            "author" : "曹雪芹"
+        },
+        {
+            "title" : "西游记",
+            "author" : "吴承恩"
+        }
+    ],
+    "phone" : {
+        "brand" : "apple",
+        "name" : "iphoneX",
+        "price" : 9999,
+        "isOld" : false
+    }
+}
